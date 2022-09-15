@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tigers= [["tamim",45],["sakib",12],["sabbir",34],["miraz",56]];
+       
+
+        function highestRunScorer(scores)
+        {
+            let pak = scores[0][0];
+            let sri = scores[0][1];
+            for( let x=1; x< scores.length; x++)
+            {
+                if( sri < scores[x][1])
+                {
+                    sri= scores[x][1];
+                    highestRunScorer = scores[x][0];
+                }
+            }
+            return sri;
+
+        }
+        let name =highestRunScorer(tigers);
+        document.write(name);
+    </script>
+</body>
+</html>

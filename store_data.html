@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Student (Name,Age,Region,University,cgpa){
+
+            console.log(Name,Age,Region,University,cgpa)
+            this.Name = Name;
+            this.Age  = Age;
+            this.Region = Region;
+            this.University= University;
+            this.cgpa= cgpa;
+
+            this.fahim = function() {
+                document.write(this.Name + "<br/>");
+                document.write(this.Age + "<br/>");
+                document.write(this.Region + "<br/>");
+                document.write(this.University + "<br/>");
+                document.write(this.cgpa + "<br/>");
+            }
+
+
+        }
+        //prototypal inheritance
+
+        var student1 = new Student (" Mr Didarul",23,"India","western University",3.24);
+        var student2 = new Student (" Md Kabirul",24,"Bangladesh","American International University",3.22);
+        var student3 = new Student (" Shen Gupta",22,"Pakistan","Asian University",3.34);
+
+        student1.fahim();
+        student2.fahim();
+        student3.fahim();
+    </script>
+    
+</body>
+</html>

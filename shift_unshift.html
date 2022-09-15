@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var names= ["x","y","z"];
+        document.write(names + "<br/>");
+
+        //using of shift
+        names.shift();
+        document.write(names + "<br/>");
+
+        //using of unshift
+        names.unshift("p");
+        document.write(names + "<br/>");
+
+        //using of splice 
+        names.splice(2,1,"d");
+        document.write(names + "<br/>");
+
+        //using of slice
+        var newArray= names.slice(1);
+        document.write(newArray + "<br/>");
+
+        //usinf of sort Alphabet
+        var Snames= names.sort();
+        document.write(Snames + "<br/>");
+
+        //using of sort number
+        var num= [2,5,3,7,6,1];
+        num.sort(function (a,b){
+            return a-b;
+        })
+        document.write(num);
+    </script>
+</body>
+</html>
